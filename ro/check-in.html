@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="iordacheana19@stud.ase.ro">
+    <title>Check in</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/gif" href="../images/GreekFlagWaving150.gif">
+
+</head>
+
+<body onload="loadWidget(document, 'script', 'weatherwidget-io-js')">
+    <script src="../index.js"></script>
+
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/37d9823d73/athens/" data-label_1="ATĒNAS"
+            data-label_2="WEATHER" data-theme="original">ATĒNAS WEATHER</a>
+    </div>
+
+    <div class="flag-icons">
+        <a href="../check-in.html"><img src="../flags icons/united-kingdom.png" alt="United Kingdom Icon" title="Engleză"></a>
+        <a href="#"><img src="../flags icons/france.png" alt="France Icon" title="Franceză"></a>
+        <a href="#"><img src="../flags icons/germany.png" alt="Germany Icon" title="Germană"></a>
+        <a href="./index.html"><img src="../flags icons/romania.png" alt="Romania Icon" title="Română"></a>
+        <a href="#"><img src="../flags icons/greece.png" alt="Greece Icon" title="Greacă"></a>
+    </div>
+
+    <div class="header">
+        <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Europe%2FAthens"
+            frameborder="0" seamless>
+        </iframe>
+        <h1>
+            Formular de check-in
+        </h1>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="obiective-turistice.html">Obiective turistice</a></li>
+            <li><a href="nopti-grecesti.html">Nopți grecești</a></li>
+            <li><a href="check-in.html">Check-in</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <form id="check-in-form">
+
+            <label for="first-name">Prenume</label><br>
+            <input type="text" id="first-name" required><br>
+
+            <label for="last-name">Nume</label><br>
+            <input type="text" id="last-name" required><br>
+
+            <label for="phone-number">Număr de telefon</label><br>
+            <input type="tel" id="phone-number" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+
+            <label for="room-type">Tipul camerei</label><br>
+            <select id="room-type">
+                <option>single</option>
+                <option>dublă</option>
+                <option>triplă</option>
+                <option>twin</option>
+            </select><br>
+
+            <label for="check-in-date">Data de check-in</label><br>
+            <input type="date" id="check-in-date" required><br>
+
+            <label for="check-out-date">Data de check-out</label><br>
+            <input type="date" id="check-out-date" required><br>
+
+            <label for="payment-method">Metodă de plată</label><br>
+            <input type="radio" name="payment-method" id="cash" value="cash">
+            <label for="cash">Cash</label><br>
+            <input type="radio" name="payment-method" id="card" value="card">
+            <label for="card">Card</label>
+            <br>
+
+            <label for="other-details">Alte detalii</label><br>
+            <textarea id="other-detalis" placeholder="Scrie câteva detalii..." cols="50" rows="10"></textarea>
+
+            <br>
+            <button type="submit" onclick="saveFile()">Salvează</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: #bce4e9; */
+    background-image: url("images/santorini-greece-2K-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    margin-left: 47%;
+}
+
+.menu{
+    width: 200px;
+}
+
+.menu ul{
+    list-style-type: none;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 15%; /*latimea fundalului practic*/
+    background-color: azure;
+    height: 100%; /*sa se intinda pe verticala pana jos */
+    position: fixed; 
+    z-index: 1;
+    /* overflow: auto; */ /*in caz ca lista are f multe elemente, sa se adauge o bara de scroll*/
+    /* overflow-y: scroll; */
+}
+
+
+.menu li a{
+    display: block;
+    color: cadetblue;
+    padding: 12px;
+    text-decoration: none; /*sa nu mai fie subliniat*/
+}
+.menu a:hover{
+    background-color: #bce4e9;
+    color: #fff;
+}
+
+/* .menu{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    width: 15%;
+}
+
+.menu-item{
+    height: 32px;
+    background-color: azure;
+    border-bottom: 1px solid black;
+} */
+
+.flag-icons{
+    float: right;
+}
+
+/*pt toate elem de tip img din elem de tip a din clasa flag-icons*/
+.flag-icons a img{
+    width: 40px; 
+    height: 40px;
+}
+
+#content{
+    margin-left: 16%; /*ca sa nu se suprapuna meniul peste content*/
+    padding: 1px 16px;
+    /* height: 1000px; */
+    background-color: #bce4e9da;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.weather{
+    margin-left: 15%;
+}
+
+table, th, td {
+    border: 1px solid rgb(176, 228, 233);
+    border-collapse: collapse;
+    background-color: azure;
+    /* width: 200px; */
+}
+
+
+th {
+    background-color: cadetblue;
+}
+
+input:not([type="radio"]), input[type="text"], textarea, select{
+    width: 80%; /*sa se intinda pe orizontala*/
+    display: inline-block;
+    margin: 8px 0px; /*distanta de 8 px fata de label*/
+    border-radius: 10px; /*margini rotunjite*/
+    padding: 10px 15px; /*distanta dintre continut si contur*/
+    box-sizing: border-box; 
+    border: 1px solid #ccc; /*conturul*/
+}
+
+button {
+    background-color: azure;
+    border: none;
+    color: cadetblue;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+    color: rgb(36, 60, 61);
+}
+
+.header iframe{
+    width: 50%;
+}
+
+#check-in-form{
+    margin-left: 15%;
+}
+
+.content-greek-nights{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#events-table {
+    display: inline;
+    margin-bottom: 15%;
+}
+
+.form-add-events{
+    margin-left: 15%;
+}
+
+img{
+    border-radius: 5px;
+}

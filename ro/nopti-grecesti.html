@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="iordacheana19@stud.ase.ro">
+    <title>Nopți grecești</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" type="image/gif" href="../images/GreekFlagWaving150.gif">
+
+</head>
+
+<body onload="loadWidget(document, 'script', 'weatherwidget-io-js')">
+    <script src="../index.js"></script>
+
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/37d9823d73/athens/" data-label_1="ATĒNAS"
+            data-label_2="WEATHER" data-theme="original">ATĒNAS WEATHER</a>
+    </div>
+
+    <div class="flag-icons">
+        <a href="../greek-nights.html"><img src="../flags icons/united-kingdom.png" alt="United Kingdom Icon" title="Engleză"></a>
+        <a href="#"><img src="../flags icons/france.png" alt="France Icon" title="Franceză"></a>
+        <a href="#"><img src="../flags icons/germany.png" alt="Germany Icon" title="Germană"></a>
+        <a href="./index.html"><img src="../flags icons/romania.png" alt="Romania Icon" title="Română"></a>
+        <a href="#"><img src="../flags icons/greece.png" alt="Greece Icon" title="Greacă"></a>
+    </div>
+
+    <div class="header">
+        <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Europe%2FAthens"
+            frameborder="0" seamless>
+        </iframe>
+
+        <h1>
+            Nopți grecești
+        </h1>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="obiective-turistice.html">Obiective turistice</a></li>
+            <li><a href="nopti-grecesti.html">Nopți grecești</a></li>
+            <li><a href="check-in.html">Check-in</a></li>
+        </ul>
+    </div>
+
+    <div class="content-greek-nights" id="content">
+        <div class="table">
+            <table id="events-table">
+                <tr>
+                    <th>Nume eveniment</th>
+                    <th>Locație</th>
+                    <th>Data începerii</th>
+                    <th>Ora începerii</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-add-events">
+            <form id="form-add-events">
+                <input type="text" placeholder="Nume eveniment..." id="event-name" required>
+                <input type="text" placeholder="Locație..." id="location" required>
+                <input type="date" id="start-date" required>
+                <input type="time" id="start-time" required>
+                <br>
+                <button id="btn-add-event" onclick="addEvent()" type="submit">Adaugă</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

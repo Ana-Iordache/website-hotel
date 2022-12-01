@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="iordacheana19@stud.ase.ro">
+    <title>Check in</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/gif" href="images/GreekFlagWaving150.gif">
+
+</head>
+
+<body onload="loadWidget(document, 'script', 'weatherwidget-io-js')">
+    <script src="index.js"></script>
+
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/37d9823d73/athens/" data-label_1="ATĒNAS"
+            data-label_2="WEATHER" data-theme="original">ATĒNAS WEATHER</a>
+    </div>
+
+    <div class="flag-icons">
+        <a href="index.html"><img src="flags icons/united-kingdom.png" alt="United Kingdom Icon" title="English"></a>
+        <a href="#"><img src="flags icons/france.png" alt="France Icon" title="French"></a>
+        <a href="#"><img src="flags icons/germany.png" alt="Germany Icon" title="German"></a>
+        <a href="ro/check-in.html"><img src="flags icons/romania.png" alt="Romania Icon" title="Romanian"></a>
+        <a href="#"><img src="flags icons/greece.png" alt="Greece Icon" title="Greek"></a>
+    </div>
+
+    <div class="header">
+        <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Europe%2FAthens"
+            width="100%" height="115" frameborder="0" seamless>
+        </iframe>
+        
+        <h1>
+            Check-in Form
+        </h1>
+
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="sightseeing-tour.html">Sightseeing tour</a></li>
+            <li><a href="greek-nights.html">Greek nights</a></li>
+            <li><a href="check-in.html">Check-in</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <form id="check-in-form">
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" required><br>
+
+            <label for="last-name">Last Name</label><br>
+            <input type="text" id="last-name" required><br>
+
+            <label for="phone-number">Phone Number</label><br>
+            <input type="tel" id="phone-number" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+
+            <label for="room-type">Room type</label><br>
+            <select id="room-type">
+                <option>single</option>
+                <option>double</option>
+                <option>triple</option>
+                <option>twin</option>
+            </select><br>
+
+            <label for="check-in-date">Check-in date</label><br>
+            <input type="date" id="check-in-date" required><br>
+
+            <label for="check-out-date">Check-out date</label><br>
+            <input type="date" id="check-out-date" required><br>
+
+            <label for="payment-method">Payment method</label><br>
+            <input type="radio" name="payment-method" id="cash" value="cash">
+            <label for="cash">Cash</label><br>
+            <input type="radio" name="payment-method" id="card" value="card">
+            <label for="card">Card</label>
+            <br>
+
+            <label for="other-details">Other detalis</label><br>
+            <textarea id="other-detalis" placeholder="Write some detalis..." cols="50" rows="10"></textarea>
+
+            <br>
+            <button type="submit" onclick="saveFile()">Save</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
