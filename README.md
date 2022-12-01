@@ -1,6 +1,7 @@
 # Description
 This application is a website for a greek hotel (Hellas Hotel) which presents some information about Greece, the hotel and a short sightseeing tour.
-Also, the administartor can add some events that will take place and can check-in the tourists using a form which will be downloaded as a txt file when the save button is pressed.
+Also, the administartor can add some events that will take place and can check-in the tourists using a form which will be downloaded as a txt file when the save button is pressed.<br>
+The website is available here: https://ana-iordache-hotel-hellas.netlify.app/
 # Pages
 * Home <img width="960" alt="ss" src="https://user-images.githubusercontent.com/100632281/205031467-a76ea804-a836-4a06-a02e-56d8a07a61d0.png">
 * About us <img width="960" alt="ss" src="https://user-images.githubusercontent.com/100632281/205031751-4339f3b4-a8de-4f82-b697-644e17c17397.png">
